@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Custom font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+
+    <!-- TensorflowJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+
+    <!-- Javascript files here -->
+    <script src="vendor/opencv.js"></script>
+    <script src="math.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Add title here -->
+      <h1 id="title">Arithmetic Arboretum</h1>
+
+      <h2 id="question"><span id="n1">3</span> + <span id="n2">2</span> =</h2>
+
+      <!--Add a drawing canvas here -->
+      <canvas
+        id="myCanvas"
+        class="my-selector"
+        width="150"
+        height="150"
+      ></canvas>
+    </div>
+
+    <div class="container">
+      <button id="checkAnswer" class="btn" value="Check">
+        Verify!!
+      </button>
+    </div>
+
+    <script src="drawing.js"></script>
+    <script src="processing.js"></script>
+    <!--  Set up TF model and drawing logic-->
+  </body>
+</html>
